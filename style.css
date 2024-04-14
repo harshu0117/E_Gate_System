@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center content within the container */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold font */
+}
+
+/* Header Styles */
+header {
+    background-color: #ccc; /* Light gray */
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10vh; /* 10% viewport height */
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #333; /* Darker gray on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 50vh; /* 60% viewport height */
+    position: relative; /* Needed for text positioning */
+}
+
+.college-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+}
+
+.hero-text {
+    position: absolute; /* Position text on top of image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    color: white; /* White text over image */
+}
+
+/* Form Section Styles */
+main {
+    height: 60vh; /* 50% viewport height */
+    /* overflow-y: auto; Enable scrollbar if content overflows */
+}
+
+form {
+    margin: 0 auto;
+    width: 60%; /* Adjust form width as needed */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700; /* Bold font for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Curved corners */
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #333; /* Darker gray border on focus */
+}
+
+/* Placeholder Styles */
+input::-webkit-input-placeholder, /* Chrome, Safari, Edge */
+textarea::-webkit-input-placeholder {
+    color: #999; /* Light gray placeholder text */
+}
+
+input:-moz-placeholder, /* Firefox */
+textarea:-moz-placeholder {
+    color: #999;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* Hand cursor on hover */
+}
+
+button:hover {
+    background-color: #222; /* Darker gray on hover */
+}
+
+
+footer{
+    display: flexbox;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    color: grey;
+    max-width: 100vw;
+    margin: auto;
+
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 80px;
+}
+
+.last{
+    color: grey;
+    margin: 50px;
+}
+
+

@@ -1,0 +1,152 @@
+
+'''
+<footer>
+        
+    <div class="row">
+        <div class="bimage col-md-6 col-lg-6 col-12">
+            <img src="https://www.iitgn.ac.in/assets/img/Final_IITGN_Logo_symmetric.svg" style="max-width:200px;">
+            <!-- <h6 class="type--uppercase">Get in Touch</h6>
+            <ul class="list--hover">
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Press Kit</a>
+                </li>
+                <li>
+                    <a href="#">Subscribe</a>
+                </li>
+            </ul> -->
+        </div>
+        <div class="col-md-2 col-lg-2 col-4">
+            <h6 class="type--uppercase">Quick Links</h6>
+            <ul class="list--hover">
+                <li>
+                    <a href="https://campus.iitgn.ac.in/" previewlistener="true">Campus</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/careers" previewlistener="true">Careers </a>
+                </li>
+                                                <li>
+                    <a href="https://www.iitgn.ac.in/contact" previewlistener="true">Contact</a>
+                </li>
+                <li>
+                    <a href="https://students.iitgn.ac.in/student_affairs" target="_blank" previewlistener="true">Student Affairs</a>
+                </li>
+                <li>
+                    <a href="https://sites.google.com/iitgn.ac.in/iws/" target="_blank" previewlistener="true">Internal Website</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-lg-2 col-4">
+            <h6 class="type--uppercase">Academics</h6>
+            <ul class="list--hover">
+                <li>
+                    <a href="https://www.iitgn.ac.in/academics" previewlistener="true">Overview</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/admissions" previewlistener="true">Admissions</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/academics/courses" previewlistener="true">Courses</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/academics/calendar/acadcal-2023-24" previewlistener="true">Calendar</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/students" previewlistener="true">Students</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-lg-2 col-4">
+            <h6 class="type--uppercase">Research</h6>
+            <ul class="list--hover">
+                <li>
+                    <a href="https://www.iitgn.ac.in/research" previewlistener="true">Overview</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/research/facilities" previewlistener="true">Facilities</a>
+                </li>
+                
+                <li>
+                    <a href="https://library.iitgn.ac.in/" target="_blank" previewlistener="true">Library</a>
+                </li>
+                <li>
+                    <a href="https://www.iitgn.ac.in/faculty" previewlistener="true">Faculty</a>
+                </li>
+                <li>
+                    <a href="https://repository.iitgn.ac.in/" previewlistener="true">Publications</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+'''
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    display: flex; /* Use flexbox for layout
+    justify-content: space-between; /* Distribute content horizontally */
+    align-items: flex-start; /* Align content vertically (headings at top) */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex
+    flex-direction;
+}
+
+.bimage { /* Assuming this class holds the logo image */
+    width: 30vw; /* 30% viewport width for logo section */
+}
+
+.bimage img {
+    width: 100%; /* Image fills the width of the section */
+    height: auto;
+}
+
+.list--hover { /* Assuming this class styles the link lists */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.list--hover li {
+    margin-bottom: 5px; /* Add spacing between links */
+}
+
+.link-column { /* For "Quick Links," "Academics," "Research" */
+    flex: 1; /* Flexible column that fills remaining space */
+}
+
+.link-column h6 { /* Styles for headings in the column */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: 700; /* Bold font */
+    margin-bottom: 10px; /* Add spacing below headings */
+}
+
+.link-group { /* Container for heading and its links */
+    margin-bottom: 15px; /* Add spacing between groups */
+}
+
+.link-group:last-child { /* Remove margin from last group */
+    margin-bottom: 0;
+}
+
+.link-column a { /* Style links within the column */
+    color: #333; /* Dark gray text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease-in-out; /* Add hover effect */
+}
+
+.link-column a:hover { /* Hover effect for links */
+    color: #000; /* Black on hover */
+} 
